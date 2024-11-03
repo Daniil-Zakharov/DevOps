@@ -10,7 +10,7 @@ RUN wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
 RUN apt install ./jdk-21_linux-x64_bin.deb
 
 # Cloning frontend repository
-RUN git clone https://github.com/Daniil-Zakharov/frontend.git ./frontend
+RUN git clone https://github.com/Daniil-Zakharov/mvc_frontend.git ./frontend
 
 # Build your application using Gradle
 RUN cd frontend && chmod +x /frontend/gradlew && /frontend/gradlew build "-Pvaadin.productionMode"

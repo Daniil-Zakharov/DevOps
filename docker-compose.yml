@@ -9,7 +9,7 @@ services:
     container_name: backend
     restart: always
     volumes:
-      - ~/container-data:/app
+      - ~/dataMVC:/app
     networks:
       sep_network:
         ipv4_address: 172.28.0.2

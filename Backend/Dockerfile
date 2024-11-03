@@ -10,7 +10,7 @@ RUN wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
 RUN apt install ./jdk-21_linux-x64_bin.deb
 
 # Cloning backend repository
-RUN git clone https://github.com/Daniil-Zakharov/backend.git /backend
+RUN git clone https://github.com/Daniil-Zakharov/mvc_backend.git /backend
 
 # Build your application using Gradle
 RUN cd backend && chmod +x /backend/gradlew && /backend/gradlew build "-Pvaadin.productionMode"
